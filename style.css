@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #388cdc #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #388cdc;
+    border-radius: 10px;
+    border: 3px none #ffffff;
+}
+
+body {
+    background-color: #fafafa;
+    padding: 100px 50px;
+    font-family: "Open Sans", serif;
+}
+
+.responsive {
+    width: 24%;
+    padding: 0 5px;
+    display: inline-block;
+    margin: auto;
+}
+
+.instagram-card {
+    height: 570px;
+    width: 20vw;
+    border: 1px solid #e0e0e0;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.instagram-card-header {
+    text-align: start;
+    padding: 20px;
+    height: 40px;
+    position: relative;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.instagram-card-user-image {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.instagram-card-user-name {
+    vertical-align: middle;
+    font-family: "Open Sans", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.source-type {
+    width: 24px;
+    height: 24px;
+    /*display: inline-flex;*/
+    /*float: right;*/
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    /*padding: 13.9rem;*/
+}
+
+.instagram-card-date {
+    font-family: "Open Sans", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.instagram-card-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(20vw - 30px);
+    /*height: 100%;*/
+    height: 325px;
+    /*overflow: hidden;*/
+}
+
+.instagram-card-image-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instagram-card-content {
+    padding: 5px 20px;
+}
+
+.instagram-card-content-user {
+    color: #000000;
+    height: 65.25px;
+    overflow: auto;
+    font-family: "Open Sans", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.likes-heart {
+    display: flex;
+}
+
+.likes {
+    padding-left: 5px;
+}
+
+.heart-button {
+    transition: 0.1s all ease-out;
+}
+
+.heart-button:hover,
+.source-type:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.heart-button:active,
+.source-type:active {
+    transform: scale(0.97);
+}
+
+hr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.load-button {
+    width: 137px;
+    height: 53px;
+    background-color: #0081ff;
+    color: white;
+    font-size: 16px;
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    margin: 50px auto;
+    border: none;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s all ease-out;
+}
+
+.load-button:hover {
+    background-color: #094e8e;
+}
+
+.load-button:active {
+    background-color: #70b5f8;
+}
+
+@media only screen and (max-width: 1880px) {
+    .responsive {
+        width: 32%;
+    }
+    .instagram-card {
+        width: 28vw;
+    }
+    .instagram-card-image {
+        width: calc(28vw - 30px);
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .responsive {
+        width: 48%;
+        margin: 6px 0;
+    }
+    .instagram-card {
+        width: 40vw;
+    }
+    .instagram-card-image {
+        width: calc(40vw - 30px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .responsive {
+        width: 99%;
+        margin: 0 auto;
+    }
+    .instagram-card {
+        width: 70vw;
+    }
+    .instagram-card-image {
+        width: 70vw;
+    }
+}
